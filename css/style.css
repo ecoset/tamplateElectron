@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, div.app {
+    width: 100%;
+    height: 100px;
+}
+body {
+    background-color: #121212;
+}
+div.header-block {
+    display: grid;
+    grid-template-columns: 10px 40px 1fr 50px 50px 50px 10px;
+    height: 40px;
+    line-height: 40px;
+    user-select: none;
+    background-color: #212121;
+    color: #777777;
+}
+div.min-btn,
+div.max-btn,
+div.close-btn {
+    text-align: center;
+    font-size: 10px;
+    transition: all .3s ease-in-out;
+}
+div.max-btn:hover,
+div.min-btn:hover,
+div.close-btn:hover {
+    background: #444444;
+    transition: all .3s ease-in-out;
+}
+div.max-btn:active,
+div.min-btn:active,
+div.close-btn:active {
+    background: #000000;
+    transition: all .3s ease-in-out;
+}
+div.body-block {
+    height: calc(100% - 70px);
+    background: #252525;
+}
+div.footer-block {
+    height: 30px;
+    background-color: #212121;
+}
+div.title {
+    -webkit-app-region: drag;
+}
+
+.body-block h1 {
+    text-align: center;
+}
